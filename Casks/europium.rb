@@ -32,8 +32,9 @@ cask "europium" do
   # Apple Silicon only. Without this, Intel users would install a binary that
   # cannot run; with it Homebrew refuses up front with a clear message.
   depends_on arch: :arm64
-  # Apple Silicon shipped with Big Sur, so :catalina would be impossible anyway.
-  depends_on macos: ">= :big_sur"
+  # The app bundle's LSMinimumSystemVersion is 12.0; the string-comparison form
+  # (">= :monterey") is deprecated, the symbol form already means "or newer".
+  depends_on macos: :monterey
 
   app "Europium.app"
 

@@ -10,8 +10,8 @@
 #
 # On each release: publish the .dmg, then bump `version` and `sha256` here.
 cask "europium" do
-  version "156.0.8078.47-1.1.1"
-  sha256 "7e141f6712b530a0a9a902559fbf19c1eb6ee11d37c169003b2be1ef68579345"
+  version "156.0.8078.47-1.1.2"
+  sha256 "7b94efc53de2aa95c5ac613984db66b248d07ad4868e3604e5c95883587850a6"
 
   # No `verified:` here on purpose: the url and homepage share a domain, and
   # Homebrew's audit_unnecessary_verified then treats `verified:` as an error.
